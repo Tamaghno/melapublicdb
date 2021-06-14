@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-
+import octo from './octo.png';
 import Datatable from "./datatable";
 
 require("es6-promise").polyfill();
@@ -31,6 +31,9 @@ export default function App(){
   const columns = data[0] && Object.keys(data[0]);
   return <div>
     <div id="customers">
+    
+    <img src={octo} alt="Logo" width="300" height="500"/>
+
     <h1 class="App-Header">Welcome to the public database of MELA</h1>
     <h5>Type your query in search-box, brought to you by <a href="http://github.com/Tamaghno" target="_blank">Tamaghno</a> & <a href="http://github.com/Saswata01071998" target="_blank">Saswata</a> </h5>
       <br></br>
